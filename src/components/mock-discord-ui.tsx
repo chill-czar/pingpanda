@@ -154,10 +154,10 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
               placeholder="Message @PingPanda"
               className="flex-1 bg-transparent py-2.5 px-1 text-white placeholder-[#72767d] focus:outline-none cursor-not-allowed "
             />
-            <div className="flex items-center space-x-3 mx-3 text-[#b9bbbe] ">
-              <Gift className="size-5 hover:text-white cursor-not-allowed hidden sm:bl" />
-              <Sticker className="size-5 hover:text-white cursor-not-allowed hidden sm:bl" />
-              <Smile className="size-5 hover:text-white cursor-not-allowed hidden sm:bl" />
+            <div className="flex items-center space-x-3 mx-3 text-[#b9bbbe]">
+              <Gift className="size-5 hover:text-white cursor-not-allowed hidden sm:block" />
+              <Sticker className="size-5 hover:text-white cursor-not-allowed hidden sm:block" />
+              <Smile className="size-5 hover:text-white cursor-not-allowed hidden sm:block" />
             </div>
           </div>
         </div>

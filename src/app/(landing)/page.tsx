@@ -3,6 +3,8 @@ import { Heading } from "../../components/heading"
 import { Check } from "lucide-react"
 import { ShinyButton } from "../../components/shiny-button"
 import { MockDiscordUI } from "../../components/mock-discord-ui"
+import { AnimatedList, AnimatedListItem } from "@/components/ui/animated-list"
+import { DiscordMessage } from "@/components/discord-message"
 
 const Page = () => {
   return (
@@ -59,7 +61,50 @@ const Page = () => {
         <div className="relative mx-auto">
           <MaxWidthWrapper className="relative">
             <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl">
-              <MockDiscordUI></MockDiscordUI>
+              <MockDiscordUI>
+                <AnimatedList>
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    username="PingPanda"
+                    avatarAlt="PingPanda Avatar"
+                    timestamp="Today at 12:35PM"
+                    badageColor="#43b581"
+                    badageText="Sign Up"
+                    title="👤 New User Signed up "
+                    content={{
+                      name: "meet gandu",
+                      email: "meetisgandu@gmail.com",
+                    }}
+                  />
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    username="PingPanda"
+                    avatarAlt="PingPanda Avatar"
+                    timestamp="Today at 12:35PM"
+                    badageColor="#faa61a"
+                    badageText="Revenue"
+                    title="💰 Payment Recived"
+                    content={{
+                      amount: "$100",
+                      email: "meetisalwaysgandu@gmail.com",
+                      plan: "PRO",
+                    }}
+                  />
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    username="PingPanda"
+                    avatarAlt="PingPanda Avatar"
+                    timestamp="Today at 12:35PM"
+                    badageColor="#43b581"
+                    badageText="Sign Up"
+                    title="👤 New User Signed up "
+                    content={{
+                      name: "meet gandu",
+                      email: "meetisgandu@gmail.com",
+                    }}
+                  />
+                </AnimatedList>
+              </MockDiscordUI>
             </div>
           </MaxWidthWrapper>
         </div>

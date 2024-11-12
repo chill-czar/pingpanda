@@ -72,8 +72,8 @@ const Page = () => {
                     badageText="Sign Up"
                     title="👤 New User Signed up "
                     content={{
-                      name: "meet gandu",
-                      email: "meetisgandu@gmail.com",
+                      name: "John Doe",
+                      email: "example@gmail.com",
                     }}
                   />
                   <DiscordMessage
@@ -86,7 +86,7 @@ const Page = () => {
                     title="💰 Payment Recived"
                     content={{
                       amount: "$100",
-                      email: "meetisalwaysgandu@gmail.com",
+                      email: "example2@gmail.com",
                       plan: "PRO",
                     }}
                   />
@@ -95,12 +95,12 @@ const Page = () => {
                     username="PingPanda"
                     avatarAlt="PingPanda Avatar"
                     timestamp="Today at 12:35PM"
-                    badageColor="#43b581"
-                    badageText="Sign Up"
-                    title="👤 New User Signed up "
+                    badageColor="#5856f2"
+                    badageText="Milestone"
+                    title=" 🚀 Revenue Milestone Achived"
                     content={{
-                      name: "meet gandu",
-                      email: "meetisgandu@gmail.com",
+                      recurringRevenue: "$1000",
+                      growth: "8.2%",
                     }}
                   />
                 </AnimatedList>
@@ -109,7 +109,24 @@ const Page = () => {
           </MaxWidthWrapper>
         </div>
       </section>
-      <section></section>
+      <section className="relative py-24 sm:py-32 bg-brand-25">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-20">
+          <div>
+            <h2 className="text-center text-base/7 font-semibold text-brand-600">
+              Intuitive Monitoring
+            </h2>
+            <Heading>Stay ahead with real-time insights</Heading>
+          </div>
+
+          <div className="grid gap-4 lg:grid-cols-3 lg:grid-rows-2">
+            {/* {firsst bento grid element } */}
+            <div className="relative lg:row-span-2">
+              <div className="absolute inset-px rounded-lg bg-white lg:rounded-l-[2rem] " />
+              <div></div>
+            </div>
+          </div>
+        </MaxWidthWrapper>
+      </section>
       <section></section>
     </>
   )

@@ -8,10 +8,11 @@ import { client } from "@/lib/client"
 import { useEffect } from "react"
 import { useRouter } from "next/navigation"
 const Page = () => {
-  const router = useRouter
+  const router = useRouter()
+
   const { data } = useQuery({
     queryFn: async () => {
-      const res = await client.post.recent.$get()
+      const res = await client.auth.getDatabaseSyncStatus.$get()
       return await res.json()
     },
     queryKey: ["get-database-sync-status"],
@@ -21,7 +22,7 @@ const Page = () => {
   })
 
   useEffect(() => {
-    if (data?.isSynced) router().push("/dashboard")
+    if (data?.isSynced) router.push("/dashboard")
   }, [data, router])
 
   return (

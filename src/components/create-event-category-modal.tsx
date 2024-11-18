@@ -11,6 +11,7 @@ import { Input } from "./ui/input"
 import { Label } from "./ui/label"
 import { Modal } from "./ui/modal"
 import { client } from "@/lib/client"
+import { LoadingSpinner } from "./loading-spinner"
 
 const EVENT_CATEGORY_VALIDATOR = z.object({
   name: CATEGORY_NAME_VALIDATOR,
@@ -53,7 +54,7 @@ export const CreateEventCategoryModal = ({ children }: PropsWithChildren) => {
   const [isOpen, setIsOpen] = useState(false)
   const QueryClient = useQueryClient()
 
-  const { mutate: createEventCategory } = useMutation({
+  const { mutate: createEventCategory, isPending } = useMutation({
     mutationFn: async (data: EventCategoryForm) => {
       await client.category.createEventCategory.$post(data)
     },
@@ -179,7 +180,10 @@ export const CreateEventCategoryModal = ({ children }: PropsWithChildren) => {
             >
               Cancel
             </Button>
-            <Button type="submit">Create category </Button>
+            <Button disabled={isPending} type="submit">
+              {" "}
+              {isPending ? <LoadingSpinner /> : "Create Category"}{" "}
+            </Button>
           </div>
         </form>
       </Modal>

@@ -30,7 +30,7 @@ model User {
   updatedAt DateTime @updatedAt
 
   EventCategory EventCategory[]
-  Event         Event[]
+  events        Event[]
   Quota         Quota[]
 
   @@index([email, apiKey])
@@ -46,7 +46,7 @@ model EventCategory {
 
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Event     Event[]
+  events    Event[]
 
   @@unique([name, userId])
 }

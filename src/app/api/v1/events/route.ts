@@ -17,6 +17,7 @@ const REQUEST_VALIDATOR = z
   .strict()
 export const POST = async (req: NextRequest) => {
   const authHeader = req.headers.get("Authorization")
+  console.log("auth header:", authHeader)
 
   if (!authHeader) {
     return NextResponse.json({ message: "Unauthorized" }, { status: 401 })

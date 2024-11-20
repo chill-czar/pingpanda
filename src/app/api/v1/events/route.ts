@@ -11,7 +11,7 @@ import { z } from "zod"
 const REQUEST_VALIDATOR = z
   .object({
     category: CATEGORY_NAME_VALIDATOR,
-    Fields: z.record(z.string().or(z.number()).or(z.boolean())).optional(),
+    fields: z.record(z.string().or(z.number()).or(z.boolean())).optional(),
     description: z.string().optional(),
   })
   .strict()
@@ -124,7 +124,7 @@ export const POST = async (req: NextRequest) => {
         ` A new ${category.name} event has occured.`,
       color: category.color,
       timeStamp: new Date().toISOString(),
-      fields: Object.entries(ValidationResult.Fields || {}).map(
+      fields: Object.entries(ValidationResult.fields || {}).map(
         ([key, value]) => {
           return {
             name: key,
@@ -140,7 +140,7 @@ export const POST = async (req: NextRequest) => {
         name: category.name,
         formatedMessage: `${eventData.title}\n\n ${eventData.description}`,
         userId: user.id,
-        fields: ValidationResult.Fields || {},
+        fields: ValidationResult.fields || {},
         eventCategoryId: category.id,
       },
     })

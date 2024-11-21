@@ -46,7 +46,7 @@ This project is a Real-time Event Monitoring and Notification SaaS designed to p
 ![Screenshot 2024-11-21 095622](https://github.com/user-attachments/assets/9e945d24-b7e3-4636-9996-e396459d5105)
 ## New category in dashborad instantly 
 ![Screenshot 2024-11-21 095633](https://github.com/user-attachments/assets/dc3e774b-d1eb-4cbd-9e8e-3ce1779ba49c)
-## Category Dletion
+## Category Deletion
 ![Screenshot 2024-11-21 095642](https://github.com/user-attachments/assets/47f05e77-54d0-493a-8376-407d511265fc)
 ## Category Deleted from Dashboard and database neon 
 ![Screenshot 2024-11-21 095653](https://github.com/user-attachments/assets/fd82c437-ffa4-4df0-8198-297e70bb6cec)

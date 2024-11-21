@@ -41,7 +41,8 @@ This project is a Real-time Event Monitoring and Notification SaaS designed to p
 
 .env.example
 
- to 
+ to ![Screenshot 2024-11-21 095653](https://github.com/user-attachments/assets/5974da57-56e2-49a0-9cef-1ea939a0239b)
+
 
 .env
 

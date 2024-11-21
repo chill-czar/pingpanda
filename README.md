@@ -22,6 +22,21 @@ This project is a Real-time Event Monitoring and Notification SaaS designed to p
 - **Database**: @neondatabase/serverless, @prisma/adapter-neon.
 - **Caching**: @upstash/redis.
 - **Utilities**: clsx, date-fns, class-variance-authority.
+![Screenshot 2024-11-21 095303](https://github.com/user-attachments/assets/2d0c4e44-5c83-4c4d-994c-75078a745d9c)
+![Screenshot 2024-11-21 095316](https://github.com/user-attachments/assets/699a78bb-2d0b-47ba-80fd-0426cdd09953)
+![Screenshot 2024-11-21 095327](https://github.com/user-attachments/assets/89ecd3c1-1b57-4f6a-9eaf-117b36dacaa7)
+![Screenshot 2024-11-21 095338](https://github.com/user-attachments/assets/93e47042-7593-4c54-95d1-d57fed99b3d8)
+![Screenshot 2024-11-21 095353](https://github.com/user-attachments/assets/b029f687-82f9-4823-8b33-76bd2e70bb26)
+![Screenshot 2024-11-21 095419](https://github.com/user-attachments/assets/ccb0ef96-b253-424b-b4d0-fd014755599c)
+![Screenshot 2024-11-21 095439](https://github.com/user-attachments/assets/1ff8041e-622e-4b1e-a4b3-0f2884565890)
+![Screenshot 2024-11-21 095516](https://github.com/user-attachments/assets/dc1d1fd9-f192-4ee9-8d51-75ba3e11d804)
+![Screenshot 2024-11-21 095529](https://github.com/user-attachments/assets/17c43362-6002-42f9-819a-10566ed07f01)
+![Screenshot 2024-11-21 095543](https://github.com/user-attachments/assets/942dd9b3-e8eb-4640-a868-dd84e27eb52a)
+![Screenshot 2024-11-21 095622](https://github.com/user-attachments/assets/9e945d24-b7e3-4636-9996-e396459d5105)
+![Screenshot 2024-11-21 095633](https://github.com/user-attachments/assets/dc3e774b-d1eb-4cbd-9e8e-3ce1779ba49c)
+![Screenshot 2024-11-21 095642](https://github.com/user-attachments/assets/47f05e77-54d0-493a-8376-407d511265fc)
+![Screenshot 2024-11-21 095653](https://github.com/user-attachments/assets/fd82c437-ffa4-4df0-8198-297e70bb6cec)
+
 
 ## Installation
 

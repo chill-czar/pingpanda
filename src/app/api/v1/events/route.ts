@@ -144,7 +144,7 @@ export const POST = async (req: NextRequest) => {
         eventCategoryId: category.id,
       },
     })
-
+    ṇ
     try {
       await discord.sendEmbed(dmChannel.id, eventData)
 
